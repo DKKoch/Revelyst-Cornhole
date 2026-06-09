@@ -599,110 +599,6 @@ body {
   background: var(--orange-dim);
 }
 
-/* ============================================================ REGISTER */
-.register {
-  padding: var(--section-pad);
-  background: var(--dark);
-  border-top: 1px solid var(--rule);
-}
-
-.register-intro {
-  color: rgba(255,255,255,0.6);
-  font-size: 16px;
-  max-width: 600px;
-  margin-bottom: 40px;
-  line-height: 1.7;
-}
-
-.register-form-wrapper {
-  max-width: 680px;
-}
-
-.register-form {
-  background: var(--charcoal);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: var(--radius);
-  padding: 40px;
-  margin-bottom: 20px;
-}
-
-.form-group {
-  margin-bottom: 24px;
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-label {
-  display: block;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.7);
-  margin-bottom: 8px;
-}
-
-.required { color: var(--orange); }
-
-input, select {
-  width: 100%;
-  background: var(--black);
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 6px;
-  color: var(--white);
-  font-family: var(--font-body);
-  font-size: 15px;
-  padding: 12px 16px;
-  transition: border-color 0.2s;
-  -webkit-appearance: none;
-}
-
-input::placeholder { color: rgba(255,255,255,0.3); }
-
-input:focus, select:focus {
-  outline: none;
-  border-color: var(--orange);
-}
-
-select option { background: var(--charcoal); }
-
-.submit-btn {
-  width: 100%;
-  background: var(--orange);
-  color: var(--white);
-  border: none;
-  cursor: pointer;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 18px;
-  border-radius: 6px;
-  transition: background 0.2s, transform 0.15s;
-}
-
-.submit-btn:hover {
-  background: var(--orange-light);
-  transform: translateY(-2px);
-}
-
-.register-note {
-  background: rgba(255,107,0,0.08);
-  border: 1px solid rgba(255,107,0,0.25);
-  border-radius: 8px;
-  padding: 16px 20px;
-  font-size: 14px;
-  color: rgba(255,255,255,0.6);
-  line-height: 1.6;
-}
-
-.register-note strong { color: var(--orange); }
-
 /* ============================================================ FOOTER */
 .site-footer {
   background: var(--charcoal);
@@ -732,19 +628,6 @@ select option { background: var(--charcoal); }
   color: rgba(255,255,255,0.25);
 }
 
-/* ============================================================ SUCCESS MESSAGE */
-.form-success {
-  background: rgba(72, 187, 120, 0.1);
-  border: 1px solid rgba(72, 187, 120, 0.3);
-  border-radius: 8px;
-  padding: 24px;
-  text-align: center;
-  color: #68d391;
-  font-weight: 600;
-  font-size: 18px;
-  display: none;
-}
-
 /* ============================================================ RESPONSIVE */
 @media (max-width: 900px) {
   .rules-layout {
@@ -760,7 +643,6 @@ select option { background: var(--charcoal); }
 @media (max-width: 680px) {
   .site-nav { display: none; }
   .hero { padding: 100px 20px 60px; }
-  .form-row { grid-template-columns: 1fr; }
   .register-form { padding: 24px; }
   .rules-sidebar { grid-template-columns: 1fr; }
   .hero-board-art { display: none; }
