@@ -6,7 +6,7 @@
   <title>Revelyst Cornhole Classic | Hyde Park, UT</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,242 +15,213 @@
   <header class="site-header">
     <div class="header-inner">
       <div class="logo-lockup">
-        <!-- Revelyst wordmark SVG (recreated from brand) -->
-        <svg class="revelyst-logo" viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Revelyst">
-          <rect width="220" height="48" rx="2" fill="none"/>
-          <text x="4" y="38" font-family="Barlow Condensed, sans-serif" font-weight="900" font-size="42" letter-spacing="-1" fill="#FFFFFF">REVELYST</text>
+        <!-- Revelyst logo mark (dragonfly R) + wordmark -->
+        <svg class="revelyst-logo" viewBox="0 0 340 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Revelyst">
+          <!-- Dragonfly / R mark simplified -->
+          <g transform="translate(0,2)">
+            <path d="M22 4 C18 1 10 2 8 8 C6 14 10 20 16 22 C10 24 4 30 6 38 C8 44 16 46 22 44 C28 42 32 36 30 30 C36 32 44 28 44 22 C44 16 38 10 32 8 C30 14 26 18 22 24 C18 18 20 10 22 4Z" fill="white" opacity="0.9"/>
+            <path d="M22 4 C26 7 28 14 26 20 C30 16 36 12 40 14 C36 8 28 4 22 4Z" fill="white"/>
+            <path d="M22 44 C18 41 16 34 18 28 C14 32 8 36 6 34 C8 40 14 46 22 44Z" fill="white" opacity="0.7"/>
+          </g>
+          <text x="52" y="38" font-family="Barlow Condensed, sans-serif" font-weight="900" font-size="40" letter-spacing="1" fill="#FFFFFF">REVELYST</text>
+          <!-- Gold slash divider -->
+          <line x1="242" y1="8" x2="252" y2="44" stroke="#92712F" stroke-width="2"/>
+          <text x="258" y="22" font-family="Barlow Condensed, sans-serif" font-weight="600" font-size="10" letter-spacing="2" fill="#92712F">CORNHOLE</text>
+          <text x="258" y="36" font-family="Barlow Condensed, sans-serif" font-weight="600" font-size="10" letter-spacing="2" fill="#92712F">CLASSIC</text>
         </svg>
-        <span class="header-subtitle">Hyde Park, Utah</span>
       </div>
       <nav class="site-nav">
+        <a href="#bracket">Bracket</a>
         <a href="#about">About</a>
         <a href="#rules">Rules</a>
-        <a href="#bracket">Bracket</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO — diagonal photo strip style like brand template -->
   <section class="hero">
-    <div class="hero-bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-    </div>
-    <div class="hero-inner">
-      <div class="hero-eyebrow">
-        <span class="bean-icon">🌽</span>
-        <span>Hyde Park Facility · All Skill Levels Welcome</span>
-        <span class="bean-icon">🌽</span>
+    <div class="hero-content">
+      <div class="hero-gold-slash">/</div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">Hyde Park, Utah · All Skill Levels</p>
+        <h1 class="hero-title">CORNHOLE<br/><em>CLASSIC</em></h1>
+        <p class="hero-sub">Revelyst's most competitive backyard showdown.<br/>Grab a partner. Bag the glory.</p>
+        <div class="hero-badges">
+          <span class="badge">Doubles Teams</span>
+          <span class="badge">Double Elimination</span>
+          <span class="badge">Score to 21 Exactly</span>
+        </div>
+        <a href="#bracket" class="cta-btn">View Live Bracket ↓</a>
       </div>
-      <h1 class="hero-title">
-        <span class="title-line-1">CORNHOLE</span>
-        <span class="title-line-2">CLASSIC</span>
-      </h1>
-      <p class="hero-tagline">Revelyst's most competitive (and most fun) sporting event of the year.<br/>Grab a partner. Stake your claim. Bag the glory.</p>
-      <div class="hero-badges">
-        <div class="badge">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2"/><path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2"/></svg>
-          <span>Doubles Teams</span>
+      <!-- Diagonal photo strip (brand signature) -->
+      <div class="hero-strip" aria-hidden="true">
+        <div class="strip-col">
+          <div class="strip-img img1"></div>
+          <div class="strip-img img2"></div>
         </div>
-        <div class="badge">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="2"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"/></svg>
-          <span>Double Elimination</span>
+        <div class="strip-col offset">
+          <div class="strip-img img3"></div>
+          <div class="strip-img img4"></div>
         </div>
-        <div class="badge">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><polyline points="12 6 12 12 16 14" stroke="currentColor" stroke-width="2"/></svg>
-          <span>Score to 21 Exactly</span>
-        </div>
-        <div class="badge">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/></svg>
-          <span>All Skill Levels</span>
+        <div class="strip-col">
+          <div class="strip-img img5"></div>
+          <div class="strip-img img6"></div>
         </div>
       </div>
-      <a href="#bracket" class="cta-btn">View the Bracket →</a>
     </div>
-    <div class="hero-board-art" aria-hidden="true">
-      <div class="cornhole-board">
-        <div class="board-surface">
-          <div class="board-hole"></div>
-          <div class="board-logo-text">R</div>
-        </div>
-        <div class="board-legs"></div>
+    <!-- Brand logos bar at bottom, like the brand template -->
+    <div class="brand-bar">
+      <span class="brand-bar-label">A REVELYST EMPLOYEE EVENT</span>
+      <div class="brand-bar-divider"></div>
+      <span class="brand-bar-facility">HYDE PARK, UTAH FACILITY</span>
+    </div>
+  </section>
+
+  <!-- BRACKET — front and center -->
+  <section class="bracket-section" id="bracket">
+    <div class="bracket-header">
+      <div class="section-label">/ LIVE TOURNAMENT</div>
+      <h2 class="section-title">THE BRACKET</h2>
+      <p class="bracket-intro">Updated in real time on PrintYourBrackets.com — check back to track your team's march to glory.</p>
+    </div>
+
+    <div class="bracket-embed-wrapper">
+      <!--
+        ============================================================
+        EMBED YOUR BRACKET HERE:
+        1. Go to printyourbrackets.com and create your bracket
+        2. Click Share / Embed and copy the iframe code
+        3. Replace the placeholder block below with your iframe
+        Example:
+        <iframe src="https://www.printyourbrackets.com/embed/YOUR-ID"
+                width="100%" height="700" frameborder="0" scrolling="auto"></iframe>
+        ============================================================
+      -->
+      <div class="bracket-placeholder">
+        <div class="bracket-icon">🎯</div>
+        <h3>Bracket Coming Soon</h3>
+        <p>Once teams are set, the bracket will be embedded here from <strong>PrintYourBrackets.com</strong> and updated live throughout the tournament.</p>
+        <a href="https://www.printyourbrackets.com" target="_blank" rel="noopener" class="bracket-link">Visit PrintYourBrackets.com →</a>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
+  <!-- ABOUT + RULES combined -->
+  <section class="info-section" id="about">
     <div class="container">
-      <div class="section-label">The Event</div>
-      <h2 class="section-title">Everyone's Invited. <br/>No Ringers Required.</h2>
-      <div class="about-grid">
-        <div class="about-card">
-          <div class="about-card-icon">🏆</div>
-          <h3>Open to All</h3>
-          <p>From first-time baggers to backyard legends — this tournament is designed for every skill level. All Hyde Park facility employees are welcome to compete.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-card-icon">🤝</div>
-          <h3>Team Up</h3>
-          <p>Grab your favorite coworker, form a doubles team, and bring your best trash talk. Two players per team — strategy and chemistry are your greatest weapons.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-card-icon">🔥</div>
-          <h3>Fight to the End</h3>
-          <p>Double elimination means one loss won't knock you out. Battle back through the losers bracket and you could still take home the title. Never give up the bags.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- RULES -->
-  <section class="rules" id="rules">
-    <div class="container">
-      <div class="section-label">The Rules</div>
-      <h2 class="section-title">How It Works</h2>
-      <div class="rules-layout">
-        <div class="rules-list">
+      <div class="info-grid">
 
-          <div class="rule-item">
-            <div class="rule-num">01</div>
-            <div class="rule-body">
-              <h3>Format</h3>
-              <p>Double elimination tournament played by doubles teams. Lose once and you're in the losers bracket — lose twice and you're watching from the sidelines with a snack.</p>
+        <!-- About -->
+        <div class="info-block" id="about-block">
+          <div class="section-label">/ THE EVENT</div>
+          <h2 class="section-title">Everyone's<br/><em>Invited.</em></h2>
+          <p class="info-text">From first-time baggers to backyard legends — the Revelyst Cornhole Classic is open to all Hyde Park facility employees, no experience required. Grab a coworker, form a team, and come ready to compete.</p>
+          <div class="info-cards">
+            <div class="info-card">
+              <span class="info-card-icon">🤝</span>
+              <div>
+                <strong>Doubles Teams</strong>
+                <p>Two players per team. Chemistry and trash talk are your greatest weapons.</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-card-icon">🔥</span>
+              <div>
+                <strong>Double Elimination</strong>
+                <p>One loss won't knock you out. Fight back through the losers bracket and you could still take the title.</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-card-icon">🏆</span>
+              <div>
+                <strong>All Skill Levels</strong>
+                <p>Never played? Perfect. Backyard pro? Also perfect. All are welcome at the boards.</p>
+              </div>
             </div>
           </div>
-
-          <div class="rule-item">
-            <div class="rule-num">02</div>
-            <div class="rule-body">
-              <h3>Win Condition</h3>
-              <p>First team to reach <strong>exactly 21 points</strong> wins the round. You must land on 21 — not over it.</p>
-            </div>
-          </div>
-
-          <div class="rule-item">
-            <div class="rule-num">03</div>
-            <div class="rule-body">
-              <h3>The Bust Rule ⚠️</h3>
-              <p>If your score <strong>exceeds 21</strong> on your turn, your score resets to <strong>11 points</strong>. Every bag counts — think before you throw!</p>
-            </div>
-          </div>
-
-          <div class="rule-item">
-            <div class="rule-num">04</div>
-            <div class="rule-body">
-              <h3>Scoring</h3>
-              <p><strong>3 points</strong> for a bag through the hole. <strong>1 point</strong> for a bag on the board. Cancellation scoring is used — points are netted between teams each frame.</p>
-            </div>
-          </div>
-
-          <div class="rule-item">
-            <div class="rule-num">05</div>
-            <div class="rule-body">
-              <h3>Court Setup</h3>
-              <p>Boards are placed 27 feet apart (hole to hole). Partners stand at opposite boards and alternate throws with the opposing team.</p>
-            </div>
-          </div>
-
-          <div class="rule-item">
-            <div class="rule-num">06</div>
-            <div class="rule-body">
-              <h3>Spirit of the Game</h3>
-              <p>Good sportsmanship is required. Friendly trash talk is encouraged. This is a Revelyst event — let's have fun and make some memories.</p>
-            </div>
-          </div>
-
         </div>
 
-        <div class="rules-sidebar">
+        <!-- Rules -->
+        <div class="info-block" id="rules">
+          <div class="section-label">/ THE RULES</div>
+          <h2 class="section-title">How It<br/><em>Works.</em></h2>
+
+          <div class="rules-list">
+            <div class="rule-row">
+              <span class="rule-num">01</span>
+              <div>
+                <strong>Scoring</strong>
+                <p><span class="gold">3 pts</span> through the hole · <span class="gold">1 pt</span> on the board · Cancellation scoring applies each frame.</p>
+              </div>
+            </div>
+            <div class="rule-row">
+              <span class="rule-num">02</span>
+              <div>
+                <strong>Win Condition</strong>
+                <p>First team to reach <span class="gold">exactly 21</span> wins the round. You must land on it — not blow past it.</p>
+              </div>
+            </div>
+            <div class="rule-row bust-row">
+              <span class="rule-num">03</span>
+              <div>
+                <strong>The Bust Rule ⚠️</strong>
+                <p>Exceed 21 and your score resets to <span class="gold">11</span>. Think before you throw.</p>
+              </div>
+            </div>
+            <div class="rule-row">
+              <span class="rule-num">04</span>
+              <div>
+                <strong>Court Setup</strong>
+                <p>Boards 27 ft apart (hole to hole). Partners stand at opposite ends and alternate throws.</p>
+              </div>
+            </div>
+            <div class="rule-row">
+              <span class="rule-num">05</span>
+              <div>
+                <strong>Spirit of the Game</strong>
+                <p>Good sportsmanship required. Friendly trash talk encouraged. Make some memories.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Score quick-ref card -->
           <div class="score-card">
-            <div class="score-card-title">Quick Score Reference</div>
-            <div class="score-row">
-              <span class="score-label">🕳️ In the Hole</span>
-              <span class="score-pts">3 pts</span>
+            <div class="score-row-item">
+              <span>🕳️ In the Hole</span><strong class="gold">3 pts</strong>
             </div>
-            <div class="score-row">
-              <span class="score-label">🟫 On the Board</span>
-              <span class="score-pts">1 pt</span>
+            <div class="score-row-item">
+              <span>🟫 On the Board</span><strong class="gold">1 pt</strong>
             </div>
             <div class="score-divider"></div>
-            <div class="score-row highlight">
-              <span class="score-label">🎯 Win at Exactly</span>
-              <span class="score-pts score-win">21</span>
+            <div class="score-row-item">
+              <span>🎯 Win at exactly</span><strong class="score-big gold">21</strong>
             </div>
-            <div class="score-row bust">
-              <span class="score-label">💥 Bust! Reset to</span>
-              <span class="score-pts score-bust">11</span>
-            </div>
-          </div>
-
-          <div class="elim-card">
-            <div class="elim-title">Double Elimination</div>
-            <div class="elim-diagram">
-              <div class="elim-row">
-                <div class="elim-box winner">Winners Bracket</div>
-              </div>
-              <div class="elim-arrows">↓ lose &nbsp;&nbsp;&nbsp; ↓ win</div>
-              <div class="elim-row">
-                <div class="elim-box losers">Losers Bracket</div>
-                <div class="elim-box champion">🏆 Champion</div>
-              </div>
-              <div class="elim-arrows">↓ lose</div>
-              <div class="elim-row">
-                <div class="elim-box out">Eliminated</div>
-              </div>
+            <div class="score-row-item">
+              <span>💥 Bust! Reset to</span><strong class="score-big bust-red">11</strong>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- BRACKET -->
-  <section class="bracket-section" id="bracket">
-    <div class="container">
-      <div class="section-label">Live Bracket</div>
-      <h2 class="section-title">Tournament Bracket</h2>
-      <p class="bracket-intro">The bracket is hosted on PrintYourBrackets.com and will be updated in real time throughout the tournament. Check back to see where your team stands!</p>
-
-      <div class="bracket-embed-wrapper">
-        <!-- 
-          ============================================================
-          HOW TO EMBED YOUR BRACKET:
-          1. Go to https://www.printyourbrackets.com
-          2. Create your double elimination bracket
-          3. Click "Share" or "Embed" on your bracket
-          4. Copy the iframe embed code they provide
-          5. Paste it below, replacing this placeholder block
-          ============================================================
-        -->
-        <div class="bracket-placeholder">
-          <div class="bracket-placeholder-inner">
-            <div class="bracket-icon">🎯</div>
-            <h3>Bracket Coming Soon</h3>
-            <p>Once teams are registered, the tournament bracket will be created on <strong>PrintYourBrackets.com</strong> and embedded here for everyone to follow along.</p>
-            <a href="https://www.printyourbrackets.com" target="_blank" rel="noopener" class="bracket-link">Visit PrintYourBrackets.com →</a>
-          </div>
-        </div>
-
-        <!-- 
-          PASTE YOUR IFRAME EMBED CODE HERE when ready. Example:
-          <iframe src="https://www.printyourbrackets.com/embed/YOUR-BRACKET-ID" 
-                  width="100%" height="600" frameborder="0" scrolling="auto"
-                  style="border-radius: 12px;"></iframe>
-        -->
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
+  <!-- FOOTER — brand template style with diagonal strip -->
   <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-logo">
-        <svg viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Revelyst">
-          <text x="4" y="38" font-family="Barlow Condensed, sans-serif" font-weight="900" font-size="42" letter-spacing="-1" fill="#FFFFFF" opacity="0.6">REVELYST</text>
-        </svg>
-      </div>
-      <p class="footer-tagline">Hyde Park Facility · Cornhole Classic</p>
+    <div class="footer-strip" aria-hidden="true">
+      <div class="footer-strip-inner"></div>
+    </div>
+    <div class="footer-content">
+      <svg class="footer-logo" viewBox="0 0 260 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Revelyst">
+        <g transform="translate(0,2)" opacity="0.8">
+          <path d="M22 4 C18 1 10 2 8 8 C6 14 10 20 16 22 C10 24 4 30 6 38 C8 44 16 46 22 44 C28 42 32 36 30 30 C36 32 44 28 44 22 C44 16 38 10 32 8 C30 14 26 18 22 24 C18 18 20 10 22 4Z" fill="white"/>
+          <path d="M22 4 C26 7 28 14 26 20 C30 16 36 12 40 14 C36 8 28 4 22 4Z" fill="white"/>
+          <path d="M22 44 C18 41 16 34 18 28 C14 32 8 36 6 34 C8 40 14 46 22 44Z" fill="white" opacity="0.7"/>
+        </g>
+        <text x="52" y="38" font-family="Barlow Condensed, sans-serif" font-weight="900" font-size="40" letter-spacing="1" fill="white" opacity="0.7">REVELYST</text>
+      </svg>
+      <p class="footer-sub">Hyde Park Facility · Cornhole Classic</p>
       <p class="footer-legal">A Revelyst employee event. For internal use only.</p>
     </div>
   </footer>
